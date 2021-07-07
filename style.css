@@ -1,0 +1,116 @@
+body {
+  height: 100vh;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.main-container {
+  display: grid;
+  grid-template-areas:
+  'review1 review1 review2 review5'
+  'review3 review4 review4 review5'
+  'f f f f';
+  grid-gap: 10px;
+  width: 70%;
+  height: 70%;
+}
+
+.reviews {
+  padding: 30px;
+  background-color: #114466;
+  color: coral;
+}
+#review-1 {
+  grid-area: review1;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+#review-2 {
+  grid-area: review2;
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+}
+
+#review-3 {
+  grid-area: review3;
+  background-color: white;
+  color: black;
+}
+
+#review-4 {
+  grid-area: review4;
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+
+#review-5 {
+  grid-area: review5;
+  background-color: white;
+  color: black;
+}
+
+.attribution {
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #112233;
+  color: coral;
+  font-size: 11px;
+  text-align: center;
+  grid-area: f;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  color: dodgerblue;
+  font-size: 16px;
+}
+
+.photo-box > img {
+  border-radius: 50%;
+  border: 1px solid hsl(217, 19%, 35%);
+  width: 30px;
+}
+
+.name-photo {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.name-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.verified {
+  opacity: 0.5;
+}
+
+.review-1, .review-2 {
+  color: hsl(0, 0%, 81%);
+}
+
+.review-text {
+  opacity: 0.7;
+}
+
+@media (max-width: 900px)
+{
+  .main-container {
+    display: flex;
+    flex-direction: column
+  }
+
+  .reviews {
+    margin-top: 20px;
+  }
+}
