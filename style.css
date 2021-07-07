@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  width: 90vw;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,14 +16,15 @@ body {
   'review3 review4 review4 review5'
   'f f f f';
   grid-gap: 10px;
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
 }
 
 .reviews {
   padding: 30px;
   background-color: #114466;
   color: coral;
+  border-radius: 10px;
 }
 #review-1 {
   grid-area: review1;
@@ -59,7 +60,7 @@ body {
 }
 
 .attribution {
-  margin-top: 80px;
+  margin-top: 150px;
   padding: 20px;
   background-color: #112233;
   color: coral;
